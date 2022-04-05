@@ -1,4 +1,5 @@
 import argparse
+import strformat
 
 import modules/scanModules
 import modules/parseModules
@@ -13,4 +14,8 @@ echo arguments.url
 let modules = scanModules()
 let parsedModules = parseModules(modules)
 
-echo parsedModules
+for module in parsedModules:
+    echo fmt"Running {module.name}"
+    for e in module.execution:
+        if e.function == "request":
+            echo "re"

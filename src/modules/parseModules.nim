@@ -28,7 +28,7 @@ proc parseModules*(modules: seq[JsonNode]): seq[WebilityModule] =
             
             if function == "request":
                 let path = executionStep[1].getStr()
-                moduleExecution.add(requestFunction(path: path))
+                moduleExecution.add(requestFunction(path: path, function: function))
 
         webilityModules.add(WebilityModule(
             name: name,

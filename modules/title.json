@@ -1,6 +1,6 @@
 {
     "info": {
-        "name": ["Title", "Fetches the title of the webpage"],
+        "name": ["HTTPTitle", "Fetches the title of the webpage"],
         "author": "@d4rckh"
     },
     "execution": [
