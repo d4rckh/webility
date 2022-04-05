@@ -17,4 +17,4 @@ for module in parsedModules:
     echo fmt"Running {module.name}"
     for e in module.execution:
         if e.function == "request":
-            echo "re"
+            echo e.path
