@@ -1,7 +1,4 @@
-import std/sequtils
-import std/os
 import std/json
-import strformat
 
 import functions/executionStep
 import functions/requestFunction
