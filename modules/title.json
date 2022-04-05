@@ -1,0 +1,13 @@
+{
+    "info": {
+        "name": ["Title", "Fetches the title of the webpage"],
+        "author": "@d4rckh"
+    },
+    "execution": [
+        ["request", "/", {
+            "enum": {
+                "body": "<[Tt][Ii][Tt][Ll][Ee][^>]*>([^<]*)</[Tt][Ii][Tt][Ll][Ee]>"
+            }
+        }]
+    ]
+}
