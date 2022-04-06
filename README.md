@@ -1,2 +1,2 @@
 # webility
-web vulnerability scanner written in nim ⚡⚡
+web vulnerability scanner written in python ⚡⚡
