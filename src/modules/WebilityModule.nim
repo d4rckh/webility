@@ -1,8 +1,8 @@
-import functions/executionStep
+import functions/requestFunction
 
 type 
     WebilityModule* = object
         name*: string
         description*: string
         author*: string
-        execution*: seq[executionStep]
+        execution*: seq[requestFunction]

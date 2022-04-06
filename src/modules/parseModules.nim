@@ -16,7 +16,7 @@ proc parseModules*(modules: seq[JsonNode]): seq[WebilityModule] =
         let author = info["author"].getStr()
 
         # parsing execution section
-        var moduleExecution: seq[executionStep] = @[]
+        var moduleExecution: seq[requestFunction] = @[]
         let execution: seq = module["execution"].getElems()
 
         for executionStepArray in execution:
@@ -25,8 +25,8 @@ proc parseModules*(modules: seq[JsonNode]): seq[WebilityModule] =
             
             if function == "request":
                 let path = executionStep[1].getStr()
-                moduleExecution.add(requestFunction(path: path, function: function))
-
+                moduleExecution.add(requestFunction(path: path, function: function, functionEnum: executionStep[2]["enum"]))
+        
         webilityModules.add(WebilityModule(
             name: name,
             description: description,

@@ -6,7 +6,7 @@
     "execution": [
         ["request", "/", {
             "enum": {
-                "body": "<[Tt][Ii][Tt][Ll][Ee][^>]*>([^<]*)</[Tt][Ii][Tt][Ll][Ee]>"
+                "body:r": "<[Tt][Ii][Tt][Ll][Ee][^>]*>([^<]*)</[Tt][Ii][Tt][Ll][Ee]>"
             }
         }]
     ]
